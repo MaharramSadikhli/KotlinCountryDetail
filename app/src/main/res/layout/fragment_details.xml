@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.DetailsFragment">
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.DetailsFragment"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/imageCountryFlag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/country_image"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:id="@+id/country_name_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/country_name"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/country_capital_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/capital_name"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/country_language_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/language"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/country_region_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/region_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/country_currency_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/currency"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
 
 
 
-</FrameLayout>
+    </LinearLayout>
+</layout>

@@ -6,4 +6,8 @@
     <string name="error">Error</string>
     <string name="country_name">Country Name</string>
     <string name="capital_name">Capital Name</string>
+    <string name="country_image">Country Image</string>
+    <string name="region_name">Region Name</string>
+    <string name="currency">Currency</string>
+    <string name="language">Language</string>
 </resources>
