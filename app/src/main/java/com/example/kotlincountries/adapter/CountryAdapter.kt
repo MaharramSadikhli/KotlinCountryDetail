@@ -37,7 +37,7 @@ class CountryAdapter(private val countryList: ArrayList<CountryModel>): Recycler
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    private fun updateCountryList(newCountryList: List<CountryModel>){
+    fun updateCountryList(newCountryList: List<CountryModel>){
         countryList.clear()
         countryList.addAll(newCountryList)
         notifyDataSetChanged()

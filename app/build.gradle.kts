@@ -17,6 +17,8 @@ object Libs {
     internal const val LIFECYCLE_VIEWMODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:$LIFECYCLE_VERSION"
     internal const val LIFECYCLE_VIEWMODEL_COMPOSE = "androidx.lifecycle:lifecycle-viewmodel-compose:$LIFECYCLE_VERSION"
     internal const val LIFECYCLE_LIVEDATA_KTX = "androidx.lifecycle:lifecycle-livedata-ktx:$LIFECYCLE_VERSION"
+    internal const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:$LIFECYCLE_VERSION"
+    internal const val LIFECYCLE_COMPILER = "androidx.lifecycle:lifecycle-compiler:$LIFECYCLE_VERSION"
 
     // legacy support
     internal const val LEGACY_SUPPORT = "androidx.legacy:legacy-support-v4:$LEGACY_SUPPORT_VERSION"
@@ -113,6 +115,8 @@ dependencies {
     implementation(Libs.LIFECYCLE_VIEWMODEL_KTX)
     implementation(Libs.LIFECYCLE_VIEWMODEL_COMPOSE)
     implementation(Libs.LIFECYCLE_LIVEDATA_KTX)
+    implementation(Libs.LIFECYCLE_EXTENSIONS)
+    kapt(Libs.LIFECYCLE_COMPILER)
 
     // legacy support implementations
     implementation(Libs.LEGACY_SUPPORT)

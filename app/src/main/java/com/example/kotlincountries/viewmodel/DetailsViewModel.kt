@@ -6,7 +6,7 @@ import com.example.kotlincountries.model.CountryModel
 
 class DetailsViewModel : ViewModel() {
 
-    private val countryLiveData = MutableLiveData<CountryModel>()
+    val countryLiveData = MutableLiveData<CountryModel>()
 
     fun getDataFromRoom() {
         val country = CountryModel(
