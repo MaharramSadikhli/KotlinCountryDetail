@@ -8,16 +8,16 @@
         android:layout_height="match_parent"
         tools:context=".view.DetailsFragment"
         android:orientation="vertical">
-        
+
         <ImageView
             android:id="@+id/imageCountryFlag"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_launcher_background"
-            android:contentDescription="@string/country_image"
             android:layout_weight="3"
-            />
+            android:contentDescription="@string/country_image"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/country_name_details"
