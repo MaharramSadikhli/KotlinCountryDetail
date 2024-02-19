@@ -2,4 +2,8 @@
     <string name="app_name">KotlinCountries</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">image</string>
+    <string name="error">Error</string>
+    <string name="country_name">Country Name</string>
+    <string name="capital_name">Capital Name</string>
 </resources>
