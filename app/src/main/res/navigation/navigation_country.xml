@@ -11,6 +11,10 @@
         <action
             android:id="@+id/action_detailsFragment_to_countryFeedFragment"
             app:destination="@id/countryFeedFragment" />
+        <argument
+            android:name="countryUuid"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/countryFeedFragment"
