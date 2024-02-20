@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.kotlincountries.R
 import com.example.kotlincountries.databinding.FragmentDetailsBinding
 import com.example.kotlincountries.utils.downloadFromUrl
 import com.example.kotlincountries.utils.placeholderProgressBar
