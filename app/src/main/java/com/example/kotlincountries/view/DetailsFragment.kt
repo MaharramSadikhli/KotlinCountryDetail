@@ -36,12 +36,14 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this)[DetailsViewModel::class.java]
-        viewModel.getDataFromRoom()
-
         arguments?.let {
             countryUuid = DetailsFragmentArgs.fromBundle(it).countryUuid
         }
+
+
+        viewModel = ViewModelProvider(this)[DetailsViewModel::class.java]
+        viewModel.getDataFromRoom()
+
 
         observeLiveData()
     }
