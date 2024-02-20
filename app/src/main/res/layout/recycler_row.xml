@@ -16,7 +16,7 @@
             android:contentDescription="@string/image"
             android:padding="5dp"
             android:src="@drawable/ic_launcher_background"
-            tools:ignore="ImageContrastCheck" />
+            />
 
         <LinearLayout
             android:id="@+id/innerLinearLayout"
