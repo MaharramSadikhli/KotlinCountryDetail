@@ -1,6 +1,5 @@
 
 object Libs {
-//    def navVersion = '2.7.4'
 
     // versions
     private const val LIFECYCLE_VERSION = "2.6.1"
@@ -9,6 +8,7 @@ object Libs {
     private const val COROUTINES_VERSION = "1.6.4"
     private const val NAVIGATION_VERSION = "2.7.7"
     private const val RETROFIT_VERSION = "2.9.0"
+    private const val RXJAVA_VERSION = "2.1.1"
     private const val GLIDE_VERSION = "4.15.0"
     private const val PALETTE_VERSION = "28.0.0"
     private const val DESIGN_VERSION = "28.0.0"
@@ -39,6 +39,10 @@ object Libs {
     internal const val RETROFIT = "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
     internal const val RETROFIT_CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
     internal const val RETROFIT_RXJAVA2_ADAPTER = "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
+
+    // rxjava2 components
+    internal const val RXJAVA2 = "io.reactivex.rxjava2:rxjava:$RXJAVA_VERSION"
+    internal const val RXANDROID = "io.reactivex.rxjava2:rxandroid:$RXJAVA_VERSION"
 
     // glide components
     internal const val GLIDE = "com.github.bumptech.glide:glide:$GLIDE_VERSION"
@@ -139,6 +143,10 @@ dependencies {
     implementation(Libs.RETROFIT)
     implementation(Libs.RETROFIT_CONVERTER_GSON)
     implementation(Libs.RETROFIT_RXJAVA2_ADAPTER)
+
+    // rxjava2 implementations
+    implementation(Libs.RXJAVA2)
+    implementation(Libs.RXANDROID)
 
     // glide implementations
     implementation(Libs.GLIDE)
