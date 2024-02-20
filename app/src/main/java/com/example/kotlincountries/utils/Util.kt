@@ -17,3 +17,11 @@ fun ImageView.downloadFromUrl(url: String?, progressDrawable: CircularProgressDr
         .load(url)
         .into(this)
 }
+
+fun placeholderProgressBar(context: android.content.Context): CircularProgressDrawable {
+    return CircularProgressDrawable(context).apply {
+        strokeWidth = 8f
+        centerRadius = 40f
+        start()
+    }
+}
