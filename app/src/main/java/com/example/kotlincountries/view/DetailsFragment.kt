@@ -9,6 +9,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.kotlincountries.R
 import com.example.kotlincountries.databinding.FragmentDetailsBinding
+import com.example.kotlincountries.utils.downloadFromUrl
+import com.example.kotlincountries.utils.placeholderProgressBar
 import com.example.kotlincountries.viewmodel.DetailsViewModel
 
 
@@ -42,7 +44,7 @@ class DetailsFragment : Fragment() {
 
 
         viewModel = ViewModelProvider(this)[DetailsViewModel::class.java]
-        viewModel.getDataFromRoom()
+        viewModel.getDataFromRoom(countryUuid)
 
 
         observeLiveData()
@@ -59,6 +61,10 @@ class DetailsFragment : Fragment() {
                 binding.countryRegionDetails.text = country.region
                 binding.countryCurrencyDetails.text = country.currency
                 binding.countryLanguageDetails.text = country.language
+
+                context?.let {
+                    binding.imageCountryFlag.downloadFromUrl(country.flag, placeholderProgressBar(it))
+                }
             }
         })
 
